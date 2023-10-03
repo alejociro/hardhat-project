@@ -1,0 +1,7 @@
+# Variables de estad
+*.env
+
+# Carpetas innecesarias (autogeneradas)
+node_modules/
+artifacts/
+cache/
