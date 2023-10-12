@@ -1,15 +1,11 @@
 async function main() {
   const [deployer] = await ethers.getSigners();
 
-  console.log("Deploying contracts with the account:", deployer.address);
+  console.log('Deploying contracts with the account:', deployer.address);
 
-  const token = await ethers.deployContract("MyToken", [
-    "DogeCoin",
-    "DOGE",
-    deployer.address,
-  ]);
-
-  console.log("Token address:", await token.getAddress());
+  // Desplegar el contrato VotingToken
+  const votingToken = await ethers.deployContract('VotingToken', []);
+  console.log('VotingToken address:', await votingToken.getAddress());
 }
 
 main()
